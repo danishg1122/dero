@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram-like Feed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #ffffff;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      margin: 0;
+      color: #333333;
+    }
+
+    .post {
+      background-color: #ffffff;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .post-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-username {
+      font-weight: bold;
+    }
+
+    .post-image {
+      max-width: 100%;
+      border-top: 1px solid #efefef;
+    }
+
+    .post-actions {
+      padding: 10px;
+    }
+
+    .post-actions button {
+      background-color: transparent;
+      border: none;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .post-actions button img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .post-likes {
+      font-weight: bold;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Instagram-like Feed</h1>
+  </div>
+
+  <div class="post">
+    <div class="post-header">
+      <img class="post-avatar" src="user1.jpg" alt="User 1">
+      <span class="post-username">User 1</span>
+    </div>
+    <img class="post-image" src="post1.jpg" alt="Post 1">
+    <div class="post-actions">
+      <button><img src="heart.svg" alt="Like"></button>
+      <button><img src="comment.svg" alt="Comment"></button>
+      <button><img src="share.svg" alt="Share"></button>
+    </div>
+    <div class="post-likes">50 likes</div>
+  </div>
+
+  <div class="post">
+    <div class="post-header">
+      <img class="post-avatar" src="user2.jpg" alt="User 2">
+      <span class="post-username">User 2</span>
+    </div>
+    <img class="post-image" src="post2.jpg" alt="Post 2">
+    <div class="post-actions">
+      <button><img src="heart.svg" alt="Like"></button>
+      <button><img src="comment.svg" alt="Comment"></button>
+      <button><img src="share.svg" alt="Share"></button>
+    </div>
+    <div class="post-likes">30 likes</div>
+  </div>
+
+  <!-- More posts can be added here -->
+
+</body>
+</html>
